@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        border: none;
+        font-family: "Poppin", sans-serif;
+      }
+      html {
+        overflow-x: hidden;
+      }
+      body{
+        background:#ecf0f1 ;
+      }
+      .my-div{
+        position: relative;
+      }
+      .border-class {
+        position: absolute;
+        border: 0.2rem solid salmon;margin-top: 20%;
+        left: 50%;
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        background: conic-gradient(
+           #3498db 0% 25%,
+          #2ecc71 25% 50%,
+          #f1c40f 50% 75%,
+          #e74c3c 75% 100%
+        );
+        transform: translate(-50%,-50%) rotate(0) ;
+        animation: spinner 8s linear infinite ;
+      }
+      /* .circle-spin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%) rotate(0) ;
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        border-top: 0.2rem solid rgb(21, 255, 0);
+        border-bottom: 0.2rem solid blueviolet;
+        border-left: 0.2rem solid black;
+        border-right: 0.2rem solid burlywood;
+        animation: spinner 8s linear infinite ;
+      } */
+      @keyframes spinner {
+        100% {
+          transform: translate(-50%, -50%) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="my-div">
+      <div class="border-class">
+        <div class="circle-spin"></div>
+      </div>
+    </section>
+  </body>
+</html>
